@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ng-help": "ng --help",
+    "ng-new": "ng new d3PracticeEntry"
   },
   "keywords": [],
   "author": "",
