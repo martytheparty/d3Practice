@@ -16,8 +16,14 @@ const markSelectorRoute: Route = {
   component: SelectingElementsComponent
 }
 
+const defaultRoute: Route = {
+  path: '**',
+  component: D3implementationComponent
+}
+
 routes.push(starterRoute);
 routes.push(markSelectorRoute);
+routes.push(defaultRoute);
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
