@@ -4,6 +4,7 @@ import { SelectingElementsComponent } from './selecting-elements/selecting-eleme
 import { MatCardModule } from '@angular/material/card';
 import { SelectingElementsP2Component } from './selecting-elements-p2/selecting-elements-p2.component';
 import { BindingDataComponent } from './binding-data/binding-data.component';
+import { ExtraDataComponent } from './extra-data/extra-data.component';
 
 
 
@@ -11,7 +12,8 @@ import { BindingDataComponent } from './binding-data/binding-data.component';
   declarations: [
     SelectingElementsComponent,
     SelectingElementsP2Component,
-    BindingDataComponent
+    BindingDataComponent,
+    ExtraDataComponent
   ],
   imports: [
     CommonModule,

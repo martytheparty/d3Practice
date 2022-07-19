@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes, Route } from '@angular/router';
 import { D3implementationComponent } from './d3implementation/d3implementation.component';
 import { BindingDataComponent } from './mike-bostock/binding-data/binding-data.component';
+import { ExtraDataComponent } from './mike-bostock/extra-data/extra-data.component';
 import { SelectingElementsP2Component } from './mike-bostock/selecting-elements-p2/selecting-elements-p2.component';
 import { SelectingElementsComponent } from './mike-bostock/selecting-elements/selecting-elements.component';
 
@@ -28,6 +29,11 @@ const markBindingRoute: Route = {
   component: BindingDataComponent
 }
 
+const extraBindingRoute: Route = {
+  path: 'mike/extra',
+  component: ExtraDataComponent
+}
+
 const defaultRoute: Route = {
   path: '**',
   component: D3implementationComponent
@@ -37,6 +43,7 @@ routes.push(starterRoute);
 routes.push(markSelectorRoute);
 routes.push(markSelectorTwoRoute);
 routes.push(markBindingRoute);
+routes.push(extraBindingRoute);
 routes.push(defaultRoute);
 
 @NgModule({

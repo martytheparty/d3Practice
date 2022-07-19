@@ -20,14 +20,9 @@ export class BindingDataComponent implements OnInit, AfterViewChecked {
   ngAfterViewChecked(): void {
       const circleData: number[] = [30, 60, 90];
       const svgSelection: Selection<SVGElement, undefined, null, undefined> = d3.select(this.svg?.nativeElement);
-      const circlesSelection = svgSelection.selectAll('circle');
+      const circlesSelection = svgSelection.selectAll('circle').data(circleData);
       circlesSelection.data(circleData);
       circlesSelection.attr('r', (d) => { return d as number})
-  }
-
-  getDataNumber(d: number): number
-  {
-    return d;
   }
 
 }
