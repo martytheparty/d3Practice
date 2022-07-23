@@ -5,6 +5,7 @@ import { MatCardModule } from '@angular/material/card';
 import { SelectingElementsP2Component } from './selecting-elements-p2/selecting-elements-p2.component';
 import { BindingDataComponent } from './binding-data/binding-data.component';
 import { ExtraDataComponent } from './extra-data/extra-data.component';
+import { DeletingElementsComponent } from './deleting-elements/deleting-elements.component';
 
 
 
@@ -13,7 +14,8 @@ import { ExtraDataComponent } from './extra-data/extra-data.component';
     SelectingElementsComponent,
     SelectingElementsP2Component,
     BindingDataComponent,
-    ExtraDataComponent
+    ExtraDataComponent,
+    DeletingElementsComponent
   ],
   imports: [
     CommonModule,
