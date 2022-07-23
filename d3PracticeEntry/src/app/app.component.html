@@ -1,8 +1,23 @@
-<mat-toolbar color="primary">
-    <mat-toolbar-row>
-      <span>Here is a list of Angular/D3 Components inspired by D3 tutrials. </span>
-    </mat-toolbar-row>
-</mat-toolbar>
+<div class="app-wrapper">
+  <mat-toolbar color="primary">
+      <mat-toolbar-row>
+        <span>Here is a list of Angular/D3 Components inspired by D3 tutrials. </span>
+      </mat-toolbar-row>
+  </mat-toolbar>
+
+  <div class="main-content">
+    <div>
+      <a routerLink="/starter">starter</a>
+    </div>
+    <div class="mike">
+    <a routerLink="/mike/selection">Mike Bostick Selection Part 1</a><br>
+    <a routerLink="/mike/selection-two">Mike Bostick Selection Part 2</a><br>
+    <a routerLink="/mike/binding">Mike Bostick Data Binding</a><br>
+    <a routerLink="/mike/extra">Mike Bostick Data Binding Extra (enter)</a><br>
+    <a routerLink="/mike/delete">Mike Bostick Data Delete (exit)</a>
+  </div>
+    <router-outlet></router-outlet>
+  </div>
+</div>
 
 
-<app-d3implementation></app-d3implementation>
