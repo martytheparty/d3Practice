@@ -2,10 +2,27 @@
 {
     .main-content
     {
+        display: flex;
         margin: 10px;
-        .mike
+        .navigation
         {
-            margin-top: 20px;
+            flex: 1;
+            .author
+            {
+                margin-top: 20px;
+
+                .tutorials
+                {
+                    margin-left: 10px;
+                }
+            }
         }
+        .visualizations
+        {
+            flex: 1;
+        }
+
+
+
     }
 }

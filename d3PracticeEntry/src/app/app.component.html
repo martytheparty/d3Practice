@@ -6,17 +6,41 @@
   </mat-toolbar>
 
   <div class="main-content">
-    <div>
-      <a routerLink="/starter">starter</a>
+    <div class="navigation">
+      <div class="author">
+        <h3>Starter</h3>
+        <div class="tutorials">
+          <a routerLink="/starter">starter</a>
+          <div>The starter component illustrates how to import D3, how to select a SVG element with D3, and how to manipulate the SVG object.  This is the starting place for all of the tutorials.</div>
+        </div>
+      </div>
+      <div class="author mike-bostick">
+        <h3>Mike Bostick</h3>
+        <div class="tutorials">
+          <a routerLink="/mike/selection">Selection Part 1</a>
+          <div>This components demonstrates how to use D3 to select and manipulate existing SVG elements.</div>
+          <a routerLink="/mike/selection-two">Selection Part 2</a>
+          <div>This components demonstrates how to use D3 to update existing SVG elements after they have been operated on.</div>
+          <a routerLink="/mike/binding">Data Binding</a>
+          <div>This components demonstrates how to use D3 to bind data to svg existing components.</div>
+          <a routerLink="/mike/extra">Data Binding Extra (enter)</a>
+          <div>This components demonstrates how to use D3 add svg elements based on the existing data.</div>
+          <a routerLink="/mike/delete">Data Delete (exit)</a>
+          <div>This components demonstrates how to use D3 delete svg elements based on the existing data.</div>
+        </div>
+        <div class="author curran-kelleher">
+          <h3>Curran Kelleher</h3>
+          <div class="tutorials">
+            <a routerLink="curran/smiley/starter">Smiley Starter</a>
+            <div>The smiley starter is square because that shape makes sense for a smiley face!</div>
+          </div>
+      </div>
     </div>
-    <div class="mike">
-    <a routerLink="/mike/selection">Mike Bostick Selection Part 1</a><br>
-    <a routerLink="/mike/selection-two">Mike Bostick Selection Part 2</a><br>
-    <a routerLink="/mike/binding">Mike Bostick Data Binding</a><br>
-    <a routerLink="/mike/extra">Mike Bostick Data Binding Extra (enter)</a><br>
-    <a routerLink="/mike/delete">Mike Bostick Data Delete (exit)</a>
   </div>
+  <div class="visualizations">
     <router-outlet></router-outlet>
+  </div>
+
   </div>
 </div>
 
