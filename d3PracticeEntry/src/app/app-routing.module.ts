@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes, Route, Router } from '@angular/router';
 import { CurranSmileyStarterComponent } from './curran-kelleher/smiley/curran-smiley-starter/curran-smiley-starter.component';
+import { FaceAndEyesComponent } from './curran-kelleher/smiley/face-and-eyes/face-and-eyes.component';
 import { D3implementationComponent } from './d3implementation/d3implementation.component';
 import { BindingDataComponent } from './mike-bostock/three-circles/binding-data/binding-data.component';
 import { DeletingElementsComponent } from './mike-bostock/three-circles/deleting-elements/deleting-elements.component';
@@ -45,6 +46,11 @@ const smileyStarterRoute: Route = {
   component: CurranSmileyStarterComponent
 }
 
+const faceAndEyesRoute: Route = {
+  path: 'curran/smiley/faceEyes',
+  component: FaceAndEyesComponent
+}
+
 const defaultRoute: Route = {
   path: '**',
   component: D3implementationComponent
@@ -58,6 +64,7 @@ routes.push(extraBindingRoute);
 routes.push(markDeleteRoute);
 
 routes.push(smileyStarterRoute);
+routes.push(faceAndEyesRoute)
 
 routes.push(defaultRoute);
 
