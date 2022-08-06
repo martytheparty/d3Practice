@@ -15,8 +15,19 @@ export class CurranSmileyStarterComponent implements AfterViewInit {
   constructor() { }
 
   ngAfterViewInit(): void {
-    const svgSelector: Selection<SVGElement, undefined, null, undefined> = d3.select(this.svg.nativeElement);
-    svgSelector.attr('fill', 'gray').attr('width', 400).attr('height', 400).style('background', 'gray');
+
+  }
+
+  updateElement(el: ElementRef | false): void
+  {
+
+    if (el)
+    {
+      const svgSelector: Selection<SVGElement, undefined, null, undefined> = d3.select(el.nativeElement);
+
+      svgSelector.attr('fill', 'gray').attr('width', 400).attr('height', 400).style('background', 'gray');
+    }
+
   }
 
 

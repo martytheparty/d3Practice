@@ -1,12 +1,9 @@
-<mat-card class="basic-d3">
-    <mat-card-header>
-      <mat-card-title>D3 Practice Starter Component</mat-card-title>
-      <mat-card-subtitle>
-            Outer Circle And Two Eyes.  Lifted (I mean inspired by) from <a href="https://www.youtube.com/watch?v=-RQWC4I2I1s">https://www.youtube.com/watch?v=-RQWC4I2I1s</a>
-        </mat-card-subtitle>
-    </mat-card-header>
-
-    <mat-card-content>
-        <svg #svg></svg>
-    </mat-card-content>
-</mat-card>
+<div class="basic-wrapper">
+    <app-layout 
+        (el)="updateElement($event)"
+        title="D3 Smiley Face And Eyes"
+        subTitle=""
+        >
+        Outer Circle And Two Eyes.  Lifted (I mean inspired by) from <a href='https://www.youtube.com/watch?v=-RQWC4I2I1s'>https://www.youtube.com/watch?v=-RQWC4I2I1s</a>.
+    </app-layout>
+</div>

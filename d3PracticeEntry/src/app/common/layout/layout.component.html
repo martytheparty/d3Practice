@@ -1,0 +1,13 @@
+<mat-card class="basic-d3">
+    <mat-card-header>
+      <mat-card-title>{{title}}</mat-card-title>
+      <mat-card-subtitle>
+            {{subTitle}}
+            <ng-content></ng-content>
+        </mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content>
+        <svg #svg></svg>
+    </mat-card-content>
+</mat-card>

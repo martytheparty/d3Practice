@@ -10,6 +10,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { MikeBostockModule } from './mike-bostock/mike-bostock.module';
 import { CurranKellerModule } from './curran-kelleher/curran-kelleher.module';
+import { CommonLayoutModule } from './common/common/common-layout.module';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { CurranKellerModule } from './curran-kelleher/curran-kelleher.module';
     MatCardModule,
     MatToolbarModule,
     MikeBostockModule,
-    CurranKellerModule
+    CurranKellerModule,
+    CommonLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -14,12 +14,20 @@ export class D3implementationComponent implements AfterViewInit {
   title = 'd3PracticeEntry';
 
   ngAfterViewInit(): void {
-    const svgSelector: Selection<SVGElement, undefined, null, undefined> = d3.select(this.sgv?.nativeElement);
 
-    svgSelector
-      .style('background', 'gray')
-      .attr('width', 600)
-      .attr('height', 100);
+  }
+
+  updateElement(el: ElementRef | false): void
+  {
+    if (el)
+    {
+      const svgSelector: Selection<SVGElement, undefined, null, undefined> = d3.select(el.nativeElement);
+
+      svgSelector
+        .style('background', 'gray')
+        .attr('width', 600)
+        .attr('height', 100);
+    }
   }
 
 }
