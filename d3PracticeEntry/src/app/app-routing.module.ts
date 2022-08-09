@@ -1,12 +1,15 @@
-import { SelectorMatcher } from '@angular/compiler';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes, Route } from '@angular/router';
+import { RouterModule, Routes, Route, Router } from '@angular/router';
+import { CurranSmileyStarterComponent } from './curran-kelleher/smiley/curran-smiley-starter/curran-smiley-starter.component';
+import { FaceAndEyesMouthEyeBrowsComponent } from './curran-kelleher/smiley/face-and-eyes-mouth-eye-brows/face-and-eyes-mouth-eye-brows.component';
+import { FaceAndEyesMouthComponent } from './curran-kelleher/smiley/face-and-eyes-mouth/face-and-eyes-mouth.component';
+import { FaceAndEyesComponent } from './curran-kelleher/smiley/face-and-eyes/face-and-eyes.component';
 import { D3implementationComponent } from './d3implementation/d3implementation.component';
-import { BindingDataComponent } from './mike-bostock/binding-data/binding-data.component';
-import { DeletingElementsComponent } from './mike-bostock/deleting-elements/deleting-elements.component';
-import { ExtraDataComponent } from './mike-bostock/extra-data/extra-data.component';
-import { SelectingElementsP2Component } from './mike-bostock/selecting-elements-p2/selecting-elements-p2.component';
-import { SelectingElementsComponent } from './mike-bostock/selecting-elements/selecting-elements.component';
+import { BindingDataComponent } from './mike-bostock/three-circles/binding-data/binding-data.component';
+import { DeletingElementsComponent } from './mike-bostock/three-circles/deleting-elements/deleting-elements.component';
+import { ExtraDataComponent } from './mike-bostock/three-circles/extra-data/extra-data.component';
+import { SelectingElementsP2Component } from './mike-bostock/three-circles/selecting-elements-p2/selecting-elements-p2.component';
+import { SelectingElementsComponent } from './mike-bostock/three-circles/selecting-elements/selecting-elements.component';
 
 const routes: Routes = [];
 
@@ -40,6 +43,26 @@ const extraBindingRoute: Route = {
   component: ExtraDataComponent
 }
 
+const smileyStarterRoute: Route = {
+  path: 'curran/smiley/starter',
+  component: CurranSmileyStarterComponent
+}
+
+const faceAndEyesRoute: Route = {
+  path: 'curran/smiley/faceEyes',
+  component: FaceAndEyesComponent
+}
+
+const faceAndEyesMouthRoute: Route = {
+  path: 'curran/smiley/faceEyesMouth',
+  component: FaceAndEyesMouthComponent
+}
+
+const faceAndEyesMouthBrowsRoute: Route = {
+  path: 'curran/smiley/faceEyesMouthBrows',
+  component: FaceAndEyesMouthEyeBrowsComponent
+}
+
 const defaultRoute: Route = {
   path: '**',
   component: D3implementationComponent
@@ -51,6 +74,12 @@ routes.push(markSelectorTwoRoute);
 routes.push(markBindingRoute);
 routes.push(extraBindingRoute);
 routes.push(markDeleteRoute);
+
+routes.push(smileyStarterRoute);
+routes.push(faceAndEyesRoute);
+routes.push(faceAndEyesMouthRoute);
+routes.push(faceAndEyesMouthBrowsRoute);
+
 routes.push(defaultRoute);
 
 @NgModule({
