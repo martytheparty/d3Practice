@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes, Route, Router } from '@angular/router';
 import { CurranSmileyStarterComponent } from './curran-kelleher/smiley/curran-smiley-starter/curran-smiley-starter.component';
+import { FaceAndEyesMouthEyeBrowsComponent } from './curran-kelleher/smiley/face-and-eyes-mouth-eye-brows/face-and-eyes-mouth-eye-brows.component';
 import { FaceAndEyesMouthComponent } from './curran-kelleher/smiley/face-and-eyes-mouth/face-and-eyes-mouth.component';
 import { FaceAndEyesComponent } from './curran-kelleher/smiley/face-and-eyes/face-and-eyes.component';
 import { D3implementationComponent } from './d3implementation/d3implementation.component';
@@ -57,6 +58,11 @@ const faceAndEyesMouthRoute: Route = {
   component: FaceAndEyesMouthComponent
 }
 
+const faceAndEyesMouthBrowsRoute: Route = {
+  path: 'curran/smiley/faceEyesMouthBrows',
+  component: FaceAndEyesMouthEyeBrowsComponent
+}
+
 const defaultRoute: Route = {
   path: '**',
   component: D3implementationComponent
@@ -72,6 +78,7 @@ routes.push(markDeleteRoute);
 routes.push(smileyStarterRoute);
 routes.push(faceAndEyesRoute);
 routes.push(faceAndEyesMouthRoute);
+routes.push(faceAndEyesMouthBrowsRoute);
 
 routes.push(defaultRoute);
 

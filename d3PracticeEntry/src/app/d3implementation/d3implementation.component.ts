@@ -8,14 +8,11 @@ import * as d3 from 'd3';
   templateUrl: './d3implementation.component.html',
   styleUrls: ['./d3implementation.component.scss']
 })
-export class D3implementationComponent implements AfterViewInit {
+export class D3implementationComponent {
 
   @ViewChild('svg') sgv?: ElementRef;
   title = 'd3PracticeEntry';
 
-  ngAfterViewInit(): void {
-
-  }
 
   updateElement(el: ElementRef | false): void
   {
