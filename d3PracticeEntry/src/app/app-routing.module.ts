@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes, Route, Router } from '@angular/router';
+import { BarchartStarterComponent } from './curran-kelleher/barchart/starter/starter.component';
 import { CurranSmileyStarterComponent } from './curran-kelleher/smiley/curran-smiley-starter/curran-smiley-starter.component';
 import { FaceAndEyesMouthEyeBrowsComponent } from './curran-kelleher/smiley/face-and-eyes-mouth-eye-brows/face-and-eyes-mouth-eye-brows.component';
 import { FaceAndEyesMouthComponent } from './curran-kelleher/smiley/face-and-eyes-mouth/face-and-eyes-mouth.component';
@@ -63,6 +64,12 @@ const faceAndEyesMouthBrowsRoute: Route = {
   component: FaceAndEyesMouthEyeBrowsComponent
 }
 
+const barcharStarterRoute: Route = {
+  path: 'curran/barchart/starter',
+  component: BarchartStarterComponent
+
+}
+
 const defaultRoute: Route = {
   path: '**',
   component: D3implementationComponent
@@ -79,6 +86,8 @@ routes.push(smileyStarterRoute);
 routes.push(faceAndEyesRoute);
 routes.push(faceAndEyesMouthRoute);
 routes.push(faceAndEyesMouthBrowsRoute);
+
+routes.push(barcharStarterRoute);
 
 routes.push(defaultRoute);
 
