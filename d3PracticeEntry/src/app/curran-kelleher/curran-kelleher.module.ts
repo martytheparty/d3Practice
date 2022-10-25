@@ -8,6 +8,7 @@ import { CommonLayoutModule } from '../common/common/common-layout.module';
 import { FaceAndEyesMouthEyeBrowsComponent } from './smiley/face-and-eyes-mouth-eye-brows/face-and-eyes-mouth-eye-brows.component';
 import { BarchartStarterComponent } from './barchart/starter/starter.component';
 import { BarchartDataloadComponent } from './barchart/dataload/dataload.component';
+import { CkBarchartComponent } from './barchart/ck-barchart/ck-barchart.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { BarchartDataloadComponent } from './barchart/dataload/dataload.componen
     FaceAndEyesMouthComponent,
     FaceAndEyesMouthEyeBrowsComponent,
     BarchartStarterComponent,
-    BarchartDataloadComponent
+    BarchartDataloadComponent,
+    CkBarchartComponent
   ],
   imports: [
     CommonModule,

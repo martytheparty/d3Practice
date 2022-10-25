@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes, Route, Router } from '@angular/router';
+import { CkBarchartComponent } from './curran-kelleher/barchart/ck-barchart/ck-barchart.component';
 import { BarchartDataloadComponent } from './curran-kelleher/barchart/dataload/dataload.component';
 import { BarchartStarterComponent } from './curran-kelleher/barchart/starter/starter.component';
 import { CurranSmileyStarterComponent } from './curran-kelleher/smiley/curran-smiley-starter/curran-smiley-starter.component';
@@ -76,6 +77,11 @@ const barchartDataLoadRoute: Route = {
   component: BarchartDataloadComponent
 }
 
+const barchartBarchartRoute: Route = {
+  path: 'current/barchart/barchart',
+  component: CkBarchartComponent
+}
+
 const defaultRoute: Route = {
   path: '**',
   component: D3implementationComponent
@@ -94,7 +100,8 @@ routes.push(faceAndEyesMouthRoute);
 routes.push(faceAndEyesMouthBrowsRoute);
 
 routes.push(barcharStarterRoute);
-routes.push(barchartDataLoadRoute)
+routes.push(barchartDataLoadRoute);
+routes.push(barchartBarchartRoute);
 
 routes.push(defaultRoute);
 
